@@ -83,13 +83,13 @@
 - `PUT /api/clientes/:id` — atualiza dados e endereço
 - `DELETE /api/clientes/:id` — remove
 
-## PSC:
+## Psc:
 - **Estrutura**:
   - `controllers` = regras de negócio (chamam o ORM e montam resposta).
   - `routes` = só roteamento, sem lógica.
   - `middlewares` = tratamento 404/erros/segurança.
 
-- **Próximos passos V2**:
+- **Próximos passos V2 (Coming soon)**:
   - Adicionar **autenticação JWT** (reutilizando a tabela `users`).
   - Criar **migrations** com `sequelize-cli`.
   - Implementar paginação/filtros nos GETs.
