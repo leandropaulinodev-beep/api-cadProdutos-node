@@ -83,13 +83,7 @@
 - `PUT /api/clientes/:id` — atualiza dados e endereço
 - `DELETE /api/clientes/:id` — remove
 
-## Dicas e anotações (estilo aula)
-
-- **Sequelize** é o ORM que mapeia JS ⇄ SQL. Cada `define` vira uma tabela.
-- `sequelize.sync({ alter: true })` atualiza o schema conforme os models (bom pra dev). Em produção, prefira **migrations**.
-- **Associações**:
-  - `Produto.belongsTo(Categoria)` cria uma `categoriaId` em `produtos`.
-  - `Cliente.hasOne(Endereco)` cria uma `clienteId` em `enderecos`.
+## PSC:
 - **Estrutura**:
   - `controllers` = regras de negócio (chamam o ORM e montam resposta).
   - `routes` = só roteamento, sem lógica.
